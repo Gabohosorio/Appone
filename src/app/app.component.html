@@ -1,1 +1,27 @@
-<app-button></app-button>
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<!--
+      <ul>
+        <li *ngFor="let city of cities" (click)="OnCityClick(city)" [ngClass]="{'Selected': city == cityselected}">{{city}}</li>
+      </ul>
+<p>{{ title }}</p>
+<p>Total: {{5 * 2}} <img class="ImgLogo" src="{{LogoAmisoft}}"></p>
+<p *ngIf="name">Developed by: {{name}}</p>
+<input type="text" [(ngModel)]="name"/>
+      <ul>
+        <li [ngClass]="'Selected Blue'">{{city}}</li>
+        <li [ngStyle]="{'color': 'white', 'background': city == 'Manizales' ? 'Blue' : 'green'}">{{city}}</li>
+        <li [ngClass]="{'Selected': city == 'Manizales', 'Blue': city != 'Manizales'}">{{city}}</li>
+        <li *ngFor="let city of cities" (click)="OnCityClick(city)" [ngClass]="{'Selected': city == cityselected}">{{city}}</li>
+      </ul>
+<div>
+  <button (click)="OnClearCity()">Clear City</button>
+</div>
+-->

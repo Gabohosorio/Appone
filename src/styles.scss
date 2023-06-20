@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* { margin: 0px; padding: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ul, ol { list-style: none; }
+
+.Selected { background: red; color: white; padding: 10px;}
+.UnSelected { background: white; padding: 5px; }
+.Blue { color: blue; }
+
+/*Images*/
+.ImgLogo { width: 80px; height: 40px;}
