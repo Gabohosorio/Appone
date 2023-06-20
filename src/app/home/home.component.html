@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-new-item (newItemEvent)="AddCity($event)" [label]="'city'" [className]="'btn-info'"></app-new-item>
+    </div>
+    <div class="col-md-6 my3">
+      <input type="text" class="control" placeholder="Filter..." [(ngModel)]="criteria">
+    </div>
+    <div class="col-md-8">
+      <ul>
+        <app-cities *ngFor="let city of (cities | filter:criteria)"
+        (cityClickEvent)="OnCityClick($event)" [city]="city" [cityselected]="cityselected" ></app-cities>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div *ngIf="cityselected">
+        <p>Your ciy is: {{cityselected}}</p>
+        <app-btn (click)="OnClearCity()" [color]="'blue'" [label]="'Clear City'"></app-btn>
+      </div>
+    </div>
+  </div>
+  <p>Fecha: {{"2/15/23" | date:'full'}}</p>
+  <p>Costo Dollars: {{"500" | currency:'EUR'}}</p>
+  <p>Costo Pesos col: {{500*5000 | currency:'COP'}}</p>
+</div>
+
